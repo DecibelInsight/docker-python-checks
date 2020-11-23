@@ -7,6 +7,7 @@ RUN apt-get update
 RUN apt-get install default-jdk -y
 
 # Install app dependencies
-COPY requirements.txt ./
+WORKDIR /app
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
