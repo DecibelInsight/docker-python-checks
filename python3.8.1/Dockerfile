@@ -3,6 +3,7 @@ MAINTAINER Gonzalo Bandeira <gbandeira@decibelinsight.com>
 
 # Install app dependencies
 WORKDIR /app
-COPY requirements.txt ./
+# Added full path, as that is what docker builder needs
+COPY python3.8.1/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
