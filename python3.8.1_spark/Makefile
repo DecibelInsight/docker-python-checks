@@ -1,4 +1,4 @@
-VERSION=3.8.1
+VERSION=3.8.1_spark
 NAME=decibel/python-checks
 
 default: build
